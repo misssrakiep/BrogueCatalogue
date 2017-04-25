@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shoe Catalogue</title>
+    <link rel="stylesheet" href="flip.css" type="text/css"/>
+  <link href='https://fonts.google.com//css?family=Sofia' rel='stylesheet'/>
+
+</head>
+    <script src="shoe-data.js" charset="utf-8"></script>
+
+<body>
+
+  <div class="row-1">
+
+      <div class="head">
+      <center>Gone brogue.. be right back!</center>
+      </div>
+      <center>
+      <br>
+
+      <center>
+      <div>
+      <img class="headShoe" src="https://s-media-cache-ak0.pinimg.com/736x/01/f1/b6/01f1b6d46e3c24413e499b80e0335fcd.jpg" alt="brogue 1">
+      <img class="headShoe" src="https://s-media-cache-ak0.pinimg.com/736x/89/ef/11/89ef11ad6b0ae6c62132403db57daf4e.jpg" alt="brogue 2">
+      <img class="headShoe" src="http://68fb2d21e496e2ae1a67-230782d40d041629cf276d16b85ebddc.r8.cf2.rackcdn.com/product-mediumsquare-517037-158448-1432983392-bf72b65f464529c8d0fcf24901f1af8c.432983393_type_mediumsquare_nid_517037_uid_158448_0" alt="brogue 3">
+      <img class="headShoe" src="https://ae01.alicdn.com/kf/HTB1a2UVKVXXXXcRXpXXq6xXFXXX5/PXELENA-2016-Hot-Sale-4-Colors-Brogue-font-b-Shoes-b-font-font-b-Women-b.jpg" alt="brogue 4">
+      <img class="headShoe" src="http://fashion.ekstrax.com/wp-content/uploads/2014/03/Classic-Brogues-Shoes-For-Men-and-Women-73.jpg" alt="brogue 5"></div>
+      </center>
+          <br><br>
+          <center>
+              <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/3d-transparent-glass-icons-culture/022128-3d-transparent-glass-icon-culture-gift-box5-sc1.png" width="30px" height="30px">
+              <button class="myWishlist">My Wishlist</button>
+              <img src="http://www.ejprescott.com/media/icons/xvalue-lease-program.png.pagespeed.ic.EU5YRnjbpW.png" height="30px" width="30px">
+          <button class="ready">Ready to purchase</button>
+              <img src="http://www.fordesigner.com/imguploads/Image/cjbc/zcool/png20080526/1211772865.png" height="30px" width="30px">
+              <button class="showAll">Show all brogues</button>
+
+          </center>
+
+    </div>
+<br><br>
+</div>
+    <div class="row-2">
+
+        <div class="col-1">
+
+
+
+
+    <div class="oxfordBox">
+      <!-- filters -->
+
+<h2>
+    Selection Pane
+        </h2>
+    <h4>Colours:</h4>
+
+        <div class="colorSelection">
+<script class="colorsTemplate" type="handlebars-x">
+            {{#each colors}}
+                <input type="radio" id="colour"  name="color" value="{{colors}}">{{colors}}</input><br>
+            {{/each}}
+        </script>
+        </div>
+<br>
+
+    <h4>Size:</h4>
+        <div class="sizeSelection">
+        <script class="sizeTemplate" type="handlebars-x">
+            {{#each size}}
+                <input type="radio" id="size"  name="size" value={{size}}>{{size}}</input><br>
+            {{/each}}
+        </script>
+        </div>
+        <br>
+
+
+    <h4>Texture:</h4>
+        <div class="textureSelection">
+        <script class="textureTemplate" type="handlebars-x">
+            {{#each texture}}
+                <input type="radio" id="texture"  name="texture" value="{{this}}">this</input><br>
+            {{/each}}
+        </script>
+
+        </div>
+     <br>
+            <h4>Type:</h4>
+        <div class="typeSelection">
+        <script class="typeTemplate" type="handlebars-x">
+            {{#each type}}
+                <input type="radio" id="type"  name="type" value="{{this}}">this</input><br>
+            {{/each}}
+        </script>
+
+        </div>
+
+
+<div class="allShoes">
+        <script class="shoeListTemplate" type="text/handlebars-x">
+  {{#each shoes}}
+
+        <div class="shoeDisplay">
+    <td class="border">
+      <img src="{{picture}}">
+        <ul>
+            <li>Colour: {{colour}}</li>
+            <li>Sizes: {{size}}</li>
+            <li>Style: {{type}}</li>
+            <li>Texture: {{texture}}</li>
+            </ul>
+        <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/3d-transparent-glass-icons-culture/022128-3d-transparent-glass-icon-culture-gift-box5-sc1.png" width="30px" height="30px">
+        <input type="button" name="wishBtn" class="tbleBtn" value="Add to Wishlist"/><br>
+
+    </td>
+        </div>
+  {{/each}}
+</script></div>
+
+
+<script type="text/javascript" src="handlebars/handlebars-v4.0.5.js">
+</script>
+<script src="shoe-data.js" charset="utf-8">
+</script>
+<script type="text/javascript" src="flip.js">
+</script>
+
+
+  </body>
+</html>

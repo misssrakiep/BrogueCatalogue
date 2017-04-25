@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+body{
+  background-image: url("http://cdn.mysitemyway.com/etc-mysitemyway/backgrounds/legacy-previews/backgrounds/watercolor-grunge/watercolor-grunge-000038-coral-salmon.jpg");
+  background-attachment: fixed;
+  box-sizing: border-box;
+
+}
+.show{
+    background-color: #FFA07A;
+    border: 2px solid #CD5C5C;
+}
+li{
+  list-style: none;
+  color: black;
+  font-family: "Sofia";
+}
+h3{
+  font-family: "Sofia";
+}
+#libImg {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 100px;
+  height: 140px;
+}
+.head{
+   color: white;
+   text-shadow: 5px 0 5px black;
+   font-family: "Sofia", cursive;
+   align-content: center;
+   font-weight: bold;
+   font-size: 50px;
+   border: 3px solid #F1948A;
+   border-radius: 10px;
+   background: url('https://s-media-cache-ak0.pinimg.com/236x/ea/59/b6/ea59b63d15c4dcf37b4f5383ce85aa6f.jpg');
+}
+#heading{
+border-top: 4px solid black;
+border-bottom: 4px solid black;
+border-radius:  70% 70%;
+}
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.headShoe {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 100px;
+  height: 140px;
+}
+h2{
+  font-family: "Sofia";
+  font-size: 30px;
+  color: #900C3F;
+}
+.oxfordBox{
+  border: 1px solid white;
+  background-color: lightpink;
+  color: black;
+  box-shadow: 3px 3px 3px hotpink;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+  margin-right: 5px;
+}
+.showAll, .ready, .addBtn, .showCustom, .myCart{
+    font-family: "Sofia";
+    font-size: 18px;
+    display: inline-block;
+    width: 200px;
+	height: 30px;
+	background: #333;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #333333;
+	color: white;
+	text-decoration: none;
+	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.4);
+    	border-radius: 4px;
+	transition: all 0.2s ease-in-out;
+}
+.checkout{
+	    font-family: "Sofia";
+    font-size: 18px;
+    display: inline-block;
+    width: 250px;
+	height: 40px;
+	background: #333;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #333333;
+	color: white;
+	text-decoration: none;
+	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.4);
+    	border-radius: 4px;
+	transition: all 0.2s ease-in-out;
+	
+}
+.showAll:hover, .ready:hover, .addBtn:hover .showCustom:hover, .myCart:hover, .checkout:hover{
+    	box-shadow: inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4);
+
+}
+.close{
+  position: absolute;
+    top: 0;
+    right: 0;
+}
+.close:hover{
+    box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#additionForm{
+  display: block;
+  width: 200px;
+  height: 500px;
+  background-color: #CD5C5C;
+  border: 2px solid white;
+  
+}
+
+#overlay{
+  height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+}
+
+
+h4{
+    font-family: "Sofia";
+    font-size: 20px;
+}
+
+.shoeDisplay{
+    display: inline-block;
+    width: 300px;
+    background-color: coral;
+    border: 3px solid white;
+    margin-left: 5px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.imgDisplay{
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 100px;
+  height: 140px;
+}
+.addToCart{
+    margin-bottom: 3px;
+    background-color: #EC7063;
+    color: white;
+    width: 150px;
+    border: 2px solid white;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+.addToCart:hover{
+   box-shadow: 0 0 3px white, 0 0 5px white;
+}
+#additionForm{
+    margin-top: 50px;
+    color: white;
+    width: 700px;
+    height: 300px;
+    border: 3px solid coral; 
+}
+input{
+    margin-bottom: 4px;
+}
+.customDisplay{
+    display: inline-block;
+    width: 300px;
+    background-color: #CD5C5C;
+    border: 3px solid white;
+    margin-left: 5px;
+    float: left;
+    margin-bottom: 5px;  
+}
+
+.customTable{
+    width: 100%;
+    background-color: #EC7063;
+    border: 2px solid antiquewhite;
+    margin-bottom: 8px;
+    
+}
+
+.thankYou{
+	display: none;
+	font-family: "Sofia";
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+}
+
